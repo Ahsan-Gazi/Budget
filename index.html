@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+ 
+    <title>Monthly Revenue and expenses</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Monthly Budget</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <!-- images -->
+                <img src="Images/Money.jpg" class="img-fluid"
+                style="width:auto;"
+                />
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <!-- Money -->
+                <h4 class="text-center">Monthly Income</h4>
+                
+    
+
+                <div class="form-group required row ">
+                    <label for="inputIncome" class="col-sm-2 col-form-label ">Income</label>
+                    <div class="col-sm-6">
+                      <input type="number" class="form-control" id="Income" 
+                      name="Income" pattern="[0-9]{10}" required
+                        placeholder="Income" >
+                    </div>
+                </div>
+
+                  <h4 class="text-center">Expenses</h4>
+                  
+                <div class="form-group required row">
+                    <label for="inputFood" class="col-sm-2 col-form-label">Food</label>
+                    <div class="col-sm-6">
+                      <input type="number" class="form-control" id="Food" placeholder="Food">
+                    </div>
+                </div>
+
+                
+                <div class="form-group required row">
+                    <label for="inputRent" id="RentRequired" class="required col-sm-2 required col-form-label">Rent</label>
+                    <div class="col-sm-6">
+                      <input type="number" class="form-control" id="Rent" placeholder="Rent">
+                    </div>
+                </div>
+
+                
+                <div class="form-group required row">
+                    <label for="inputClothes" class="required col-sm-2 col-form-label">Clothes</label>
+                    <div class="col-sm-6">
+                      <input type="number" class="form-control" id="Clothes" placeholder="Clothes">
+                    </div>
+                </div><br/>
+
+                <button  type="button" class="btn btn-primary text-center" id="calc-button">Calculate</button>
+
+               
+                <div>
+                    <h4>Total Expenses:<span id="total-expenses"></span></h4>
+                </div>
+
+                <div>
+                    <h4>Balance:<span id="total-balance"></span></h4>
+                </div>
+
+
+
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Save:</span>
+                    <input type="number" class="" style="width:20%;" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm" id="Save"><span class=" mx-4">%</span>
+                    <button class="btn btn-primary" id="save-button">Save</button>
+                </div>
+
+                
+                <div>
+                    <h4>Saving Amount:<span id="saving-amount"></span></h4>
+                </div>
+
+                <div>
+                    <h4>Remaining Balance:<span id="remaining-balance"></span></h4>
+                </div>
+
+                </div>
+              
+                
+            </div>
+
+
+
+            
+        </section>
+        
+ 
+    </main>
+    <script src="JS/app.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+</html>
